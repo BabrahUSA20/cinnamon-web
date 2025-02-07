@@ -9,48 +9,59 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
-<body class="body flex justify-center items-center">
-    <nav class="p-5 bg-white  md:flex md:items-center md:justify-between gap-[150px]">
-        <div class="flex justify-between items-center">
-            <span class="text-2xl font-[Poppins] test-extrabond cursor-pointer">
+<body class="body">
+    <!-- <nav class="p-5 bg-white  md:flex md:items-center md:justify-between gap-[150px]"></nav> -->
+    <nav class="p-5 bg-white lg:flex lg:justify-between xl:flex xl:justify-center xl:gap-[50px] ">
+        <div class="flex justify-between items-center ">
+            <span class="text-3xl font-[Poppins] font-black cursor-pointer">
                     CINNAMON
             </span>
-            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <span class=" text-3xl  cursor-pointer mx-2 lg:hidden">
                 <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
             </span>
         </div>
 
-        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]
-        transition-all ease-in duration-500">
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-1xl hover:text-[#5135ff] duration-500">Home</a>
+        <ul class="lg:flex lg:items-center z-[-1] lg:z-auto lg:static absolute bg-white w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px]
+        transition-all ease-in xl:font-medium duration-500">
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-1xl  hover:text-[#5135ff] duration-500">Home</a>
             </li>
-            <li class="mx-4 my-6 md:my-0">
+            <li class="mx-4 my-6 lg:my-0">
                 <a href="#" class="text-1xl hover:text-[#5135ff] duration-500">Project</a>
             </li>
-            <li class="mx-4 my-6 md:my-0">
+            <li class="mx-4 my-6 lg:my-0">
                 <a href="#" class="text-1xl hover:text-[#5135ff] duration-500">Services</a>
             </li>
-            <li class="mx-4 my-6 md:my-0">
+            <li class="mx-4 my-6 lg:my-0">
                 <a href="#" class="text-1xl hover:text-[#5135ff] duration-500">About Us</a>
             </li>
-            <li class="mx-4 my-6 md:my-0">
+            <li class="mx-4 my-6 lg:my-0">
                 <a href="#" class="text-1xl hover:text-[#5135ff] duration-500">Careers</a>
             </li>
-            <li class="mx-4 my-6 md:my-0">
+            <li class="mx-4 my-6 lg:my-0">
                 <a href="#" class="text-1xl hover:text-[#5135ff] duration-500">Blog</a>
             </li>
-            <li class="mx-4 my-6 md:my-0 rounded-full border-2 py-3 px-3 border-[#5135ff] hover:bg-[#5135ff] flex items-center">
+            <li class="mx-4 my-6 lg:my-0 rounded-full border-2 py-3 px-3 border-[#5135ff] hover:bg-[#5135ff] flex items-center">
                 <ion-icon name="play-outline" class="text-[20px] text-[#5135ff] shaded-[#5135ff] font-extralight"></ion-icon>
             </li>
             
-            <li class="mx-4 my-6 md:my-0 border-2 px-8 p-3 border-[#5135ff] hover:bg-[white] bg-[#5135ff] text-white">
+            <li class="mx-4 my-6 lg:my-0 border-2 px-8 p-3 lg:px-7 lg:py-2 border-[#5135ff] hover:bg-[white] bg-[#5135ff] text-white">
                 <a href="#" class="text-1xl hover:text-[#5135ff]  duration-500">Lets's collaborate</a>
             </li>
             
         </ul>
 
     </nav>
+   
+        <div class="flex m-5 flex-col gap-10 w-[60%]">
+        <h1 class="text-[49px] font-black -mt-8 w-[500px]">Fiona: Engage & Decide</h1>
+        <p class="text-[15px] font-extralight font-sans text-gray-700">Fiona is a fintech consumer-facing website that enables users to search for financial products, discover them, and receive personalized recommendations.</p>
+        <div class="flex flex-col capitalization gap-5 font-bold text-[15px] md:flex md:flex-row" >
+        <p>PRODUCT  DESING</p>
+        <p>WEB DEVELOPMENT</p>
+    </div>
+
+    </div>
     <script>
         function Menu(e){
             let list = document.querySelector('ul');
